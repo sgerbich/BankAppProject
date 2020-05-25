@@ -1,3 +1,5 @@
+package bankaccountapp;
+
 public abstract class Account implements IBaseRate {
     
     private String name;

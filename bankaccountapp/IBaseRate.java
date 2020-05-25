@@ -1,3 +1,5 @@
+package bankaccountapp;
+
 public interface IBaseRate {
     
     default double getBaseRate(){

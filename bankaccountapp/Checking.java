@@ -1,3 +1,5 @@
+package bankaccountapp;
+
 public class Checking extends Account{
     
     private int debitCardNumber;

@@ -1,3 +1,5 @@
+package bankaccountapp;
+
 public class Savings extends Account{
     
     private int safetyDepositBoxID;
