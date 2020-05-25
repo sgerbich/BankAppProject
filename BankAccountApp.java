@@ -7,5 +7,10 @@ public class BankAccountApp {
         chkacc1.showInfo();
         System.out.println("***********************");
         savacc1.showInfo();
+
+
+        savacc1.deposit(5000);
+        savacc1.withdraw(200);
+        savacc1.transfer("Brokerage", 3000);
     }
 }
