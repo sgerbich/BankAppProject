@@ -4,13 +4,13 @@ public class BankAccountApp {
        
        Savings savacc1 = new Savings("Rich Lowe", "987654321", 2500);
        
+
+        savacc1.compound();
         chkacc1.showInfo();
         System.out.println("***********************");
         savacc1.showInfo();
 
 
-        savacc1.deposit(5000);
-        savacc1.withdraw(200);
-        savacc1.transfer("Brokerage", 3000);
+        
     }
 }

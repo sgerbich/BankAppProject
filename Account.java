@@ -1,11 +1,11 @@
 public abstract class Account implements IBaseRate {
     
-    String name;
-    String sSN;
-    double balance;
-    static int index = 10000;
-    String accountNumber;
-    double rate;
+    private String name;
+    private String sSN;
+    private double balance;
+    private static int index = 10000;
+    protected String accountNumber;
+    protected double rate;
 
     public Account(String name,String sSN, double initDeposit){
         this.name=name;
@@ -26,6 +26,13 @@ public abstract class Account implements IBaseRate {
         int uniqueID = index;
         int randomNumber = (int) (Math.random() * Math.pow(10, 3));
         return last2ofSSN+ uniqueID+ randomNumber;
+    }
+
+    public void compound(){
+        double accruedIntrest = balance * (rate/100);
+        balance= balance + accruedIntrest;
+        System.out.println("Accrued Intrest:  $" + accruedIntrest);
+        printBalance();
     }
 
     public void deposit(double amount){
