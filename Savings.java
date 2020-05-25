@@ -21,7 +21,7 @@ public class Savings extends Account{
         System.out.println(
             "Your Saving Account Features"+
             "\n Safety Deposit Box ID: "+ safetyDepositBoxID+
-            "\n Safety Deposit Box Key"+ safetyDepositBoxKey
+            "\n Safety Deposit Box Key: "+ safetyDepositBoxKey
         );
 
     }
